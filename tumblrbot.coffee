@@ -58,9 +58,7 @@ module.exports = tumblrBotBuilder = (robot) ->
 tumblrBotBuilder[method] = func for method,func of TumblrBotApi.prototype
 
 tumblrBotBuilder.logger = {
-  error: (test) ->
-    util.error "ERROR: #{test}"
-    msg.send "Error"
-    console.log "We had an error"
+  error: (msg) ->
+    util.error "ERROR: #{msg}"
   debug: ->
 }
