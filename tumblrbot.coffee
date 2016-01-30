@@ -60,6 +60,6 @@ tumblrBotBuilder[method] = func for method,func of TumblrBotApi.prototype
 tumblrBotBuilder.logger = {
   error: (msg) ->
     util.error "ERROR: #{msg}"
-    msg.send "ERROR: #{msg}"
+    console.log "We had an error"
   debug: ->
 }
